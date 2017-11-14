@@ -1,2 +1,7 @@
-{{ data | json}}
+<ul>
+    <li *ngFor="let job of jobs | paginate: { itemsPerPage: 10, currentPage: page }">
+        <p> {{ job.title }} </p>
+    </li>
+</ul>
 
+<pagination-controls (pageChange)="page = $event"></pagination-controls>

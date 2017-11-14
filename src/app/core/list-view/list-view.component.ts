@@ -13,6 +13,8 @@ export class ListViewComponent implements OnInit {
 
   parseString = require('xml2js').parseString;
   data: string;
+  jobs = [];
+  page: number = 1;
 
   constructor(
     private _sharedService: SharedService
@@ -38,6 +40,8 @@ export class ListViewComponent implements OnInit {
       data = result.rss.channel[0]
     })
     this.data = data;
+    this.jobs = data.item
+    console.log(this.jobs);
   }
   
 }
