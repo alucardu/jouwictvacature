@@ -13,16 +13,13 @@ body, html {
     padding-top: 45px;
     padding-bottom: 45px;
     margin-left: -40px;
-}
-
-.pagination.ngx-pagination .current {
-    border-radius: 3px;
-}
-
-.pagination .ngx-pagination a:hover {
-    border-radius: 3px;
-}
-
-.pagination .ngx-pagination li a {
-    color: #6E90A0;
+    .current {
+        border-radius: 3px;
+    }
+    a:hover {
+        border-radius: 3px;
+    }
+    li a {
+        color: #6E90A0;
+    }
 }

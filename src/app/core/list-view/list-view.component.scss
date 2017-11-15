@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+$blue: #0099E5;
+$white: #FFFFFF;
+
+#jobContent {
+    font-family: 'PT Sans', sans-serif;    
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: $white;
+}
+
+#title {
+    background: linear-gradient(to right, #20BAE1, #0281E5);
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    color: $white;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jobContent {
+    padding: 0 5% 0 5%;
+    width: 85%;
+}
+
+.listJob {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    li {
+        width: 100%;
+        float: left;
+        border-bottom: 2px solid #E7EEEF;
+        padding: 20px 0 20px 0;
+        display: flex;
+        &:last-child{
+            border-bottom: none;
+        }
+        p {
+            margin: 0 0 5px 0;
+            padding: 0;
+            clear: both;  
+        }
+    }
+}
+
+.jobLogo {
+    float: left;
+    width: 16%;
+    padding: 0 2% 0 2%;
+    display: flex;
+    align-items: center;
+    img {
+        width: 100%;
+    }
+}
+
+.jobTitle {
+    color: $blue;
+    font-size: 20px;
+}
+.jobCity {
+    color: #373737;
+    font-size: 14px;
+}
+.jobProvince {
+    color: #9BADB6;
+    font-size: 12px;    
+}
+.jobDetails{
+    display: flex;
+    align-items: center;
+    padding: 0 5% 0 5%;
+    float: right;
+    width: 25%;
+    button {
+        cursor: pointer;
+        font-weight: 600;    
+        height: 40px;
+        width: 100%;
+        background-color: #CFCFCF;
+        border-radius: 5px;
+        border: none;
+        font-size: 12px;
+        & a {
+            color: #515156;
+            text-decoration: none;
+        }
+        &:focus {
+            outline: 0;
+        }
+    }
+}

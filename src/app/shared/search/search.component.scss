@@ -16,11 +16,10 @@ input {
   background-position: 8px 16px;
   padding-left: 35px;
   margin: 0;
-  float: left
-}
-
-input:focus {
-  outline: none;
+  float: left;
+  &:focus {
+    outline: none;
+  }
 }
 
 button {
@@ -33,8 +32,7 @@ button {
   color: white;
   height: 49px;
   margin: 0;
-}
-
-button:focus {
-  outline: none;
+  :focus {
+    outline: none;
+  }
 }
