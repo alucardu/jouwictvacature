@@ -9,7 +9,7 @@ import { SharedService } from './shared/shared.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

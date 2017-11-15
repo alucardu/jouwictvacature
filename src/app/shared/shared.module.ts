@@ -11,9 +11,13 @@ import { HeaderComponent } from './header/header.component';
     CommonModule,
     HttpClientModule
   ],
+  exports: [
+    FooterComponent
+  ],
   declarations: [
     HeaderComponent,
     FooterComponent, 
-    SearchComponent]
+    SearchComponent
+  ]
 })
 export class SharedModule { }
