@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
 import { SharedService } from '../../shared/shared.service';
 import { FilterPipe } from '../../shared/search/search.pipe'
+import 'airbnb-js-shims';
 
 declare var require: any;
 var xml2js = require('xml2js');

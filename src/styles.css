@@ -5,3 +5,24 @@ body, html {
     padding: 0;
     background-color: #F9F9F9;
 }
+
+.pagination .ngx-pagination {
+    display: flex;
+    justify-content: center;
+    background-color: #F9F9F9;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin-left: -40px;
+}
+
+.pagination.ngx-pagination .current {
+    border-radius: 3px;
+}
+
+.pagination .ngx-pagination a:hover {
+    border-radius: 3px;
+}
+
+.pagination .ngx-pagination li a {
+    color: #6E90A0;
+}

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
-.pagination /deep/ .ngx-pagination {
+/* .pagination /deep/ .ngx-pagination {
     display: flex;
     justify-content: center;
     background-color: #F9F9F9;
@@ -19,7 +19,7 @@
 
 .pagination /deep/ .ngx-pagination li a {
     color: #6E90A0;
-}
+} */
 
 #jobContent {
     font-family: 'PT Sans', sans-serif;    
