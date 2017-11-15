@@ -1,4 +1,8 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, Input, Output, EventEmitter } from '@angular/core';
+import { FilterPipe } from './search.pipe'
+import { SharedService } from '../shared.service';
+import { Subject } from 'rxjs/Subject';
+import 'rxjs/add/operator/debounceTime';
 
 @Component({
   selector: 'app-search',
@@ -8,9 +12,18 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
-  constructor() { }
+  @Output() notify: EventEmitter<string> = new EventEmitter<string>();
+  queryString: String;
+
+  constructor(
+    private _sharedService: SharedService
+  ){}
 
   ngOnInit() {
+  }
+
+  passValue(queryString: string) {
+    this._sharedService.passSearchValue(queryString);
   }
 
 }

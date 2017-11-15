@@ -2,9 +2,9 @@
     <div id="title">
         <h1> Vacatures: Vind een baan die echt bij je past.</h1>
     </div>
-
+    
     <ul class="listJob">
-        <li *ngFor="let job of jobs | paginate: { itemsPerPage: 5, currentPage: page }">
+        <li *ngFor="let job of jobs | FilterPipe: queryString | paginate: { itemsPerPage: 5, currentPage: page }">
             <div class="jobLogo">
                 <img src="{{ job.logo }}"/>
             </div>

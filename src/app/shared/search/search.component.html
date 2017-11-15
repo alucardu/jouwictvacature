@@ -1,4 +1,4 @@
 <div id="searchContent">
-  <input type="text" placeholder="Bijv. PHP developer, AngularJs"/>
-  <button>Zoeken</button>
+  <input [(ngModel)]="queryString" (ngModelChange)='passValue($event)' type="text" placeholder="Bijv. Java dev of Groningen"/>
+  <!-- <button>Zoeken</button> -->
 </div>
