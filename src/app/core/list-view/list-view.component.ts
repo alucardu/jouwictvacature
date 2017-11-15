@@ -49,7 +49,7 @@ export class ListViewComponent implements OnInit {
       data = result.rss.channel
     })
     this.data = data;
-    this.jobs = data.item
+    this.jobs = data.item    
   }
   
 }

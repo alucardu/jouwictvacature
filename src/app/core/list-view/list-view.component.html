@@ -14,10 +14,11 @@
                 <p class="jobProvince"> {{ job.province }}</p>
             </div>
             <div class="jobDetails">
-                <button>BEKIJK DETAILS</button>
+                <button><a href="{{ job.link }}">BEKIJK DETAILS</a></button>
             </div>
         </li>
     </ul>
 
-    <pagination-controls class="pagination" (pageChange)="page = $event"></pagination-controls>
+    <pagination-controls class="pagination" [previousLabel]="''" [nextLabel]="''" (pageChange)="page = $event"></pagination-controls>
+    
 </div>

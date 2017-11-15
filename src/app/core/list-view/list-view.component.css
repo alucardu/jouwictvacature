@@ -108,11 +108,14 @@
     font-weight: 600;    
     height: 40px;
     width: 100%;
-    color: #515156;
     background-color: #CFCFCF;
     border-radius: 5px;
     border: none;
     font-size: 12px;
+}
+.jobDetails button a {
+    color: #515156;
+    text-decoration: none;
 }
 .jobDetails button:focus {
     outline: 0;
