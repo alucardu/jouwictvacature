@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #F9F9F9;
+}
+
+.pagination .ngx-pagination {
+    display: flex;
+    justify-content: center;
+    background-color: #F9F9F9;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin-left: -40px;
+    .current {
+        border-radius: 3px;
+    }
+    a:hover {
+        border-radius: 3px;
+    }
+    li a {
+        color: #6E90A0;
+    }
+}

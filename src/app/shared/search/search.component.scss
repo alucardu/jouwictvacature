@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+#searchContent {
+  margin-top: 50px;
+  float: right;
+  font-family: 'PT Sans', sans-serif;
+}
+
+input {
+  border: 1px solid #000;
+  border-radius: 3px;
+  height: 45px;
+  width: 200px;
+  background-image: url('../../../assets/images/icon_search.png'); 
+  background-repeat: no-repeat;
+  background-position: 8px 16px;
+  padding-left: 35px;
+  margin: 0;
+  float: left;
+  &:focus {
+    outline: none;
+  }
+}
+
+button {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0 15px 0 15px;
+  border: none;
+  background-color: #000;
+  color: white;
+  height: 49px;
+  margin: 0;
+  :focus {
+    outline: none;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  #searchContent {
+    margin-top: 0px;
+    float: none;    
+  }
+  input {
+    padding-left: 5%;
+    width: 95%;
+  }
+}

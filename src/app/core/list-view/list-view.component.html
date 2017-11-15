@@ -1,0 +1,24 @@
+<div id="jobContent">
+    <div id="title">
+        <h1> Vacatures: Vind een baan die echt bij je past.</h1>
+    </div>
+    
+    <ul class="listJob">
+        <li *ngFor="let job of jobs | FilterPipe: queryString | paginate: { itemsPerPage: 5, currentPage: page }">
+            <div class="jobLogo">
+                <img src="{{ job.logo }}"/>
+            </div>
+            <div class="jobContent">
+                <p class="jobTitle">{{ job.title }}</p>
+                <p class="jobCity">{{ job.city }}</p>
+                <p class="jobProvince"> {{ job.province }}</p>
+            </div>
+            <div class="jobDetails">
+                <button><a href="{{ job.link }}">BEKIJK DETAILS</a></button>
+            </div>
+        </li>
+    </ul>
+
+    <pagination-controls class="pagination" [previousLabel]="''" [nextLabel]="''" (pageChange)="page = $event"></pagination-controls>
+    
+</div>
