@@ -12,7 +12,9 @@ import { HeaderComponent } from './header/header.component';
     HttpClientModule
   ],
   exports: [
-    FooterComponent
+    HeaderComponent,
+    FooterComponent,
+    SearchComponent
   ],
   declarations: [
     HeaderComponent,
