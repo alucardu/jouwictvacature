@@ -1,7 +1,23 @@
-<ul>
-    <li *ngFor="let job of jobs | paginate: { itemsPerPage: 10, currentPage: page }">
-        <p> {{ job.title }} </p>
-    </li>
-</ul>
+<div id="jobContent">
+    <div id="title">
+        <h1> Vacatures: Vind een baan die echt bij je past.</h1>
+    </div>
 
-<pagination-controls (pageChange)="page = $event"></pagination-controls>
+    <ul class="listJob">
+        <li *ngFor="let job of jobs | paginate: { itemsPerPage: 5, currentPage: page }">
+            <div class="jobLogo">
+                <img src="{{ job.logo }}"/>
+            </div>
+            <div class="jobContent">
+                <p class="jobTitle">{{ job.title }}</p>
+                <p class="jobCity">{{ job.city }}</p>
+                <p class="jobProvince"> {{ job.province }}</p>
+            </div>
+            <div class="jobDetails">
+                <button>BEKIJK DETAILS</button>
+            </div>
+        </li>
+    </ul>
+
+    <pagination-controls (pageChange)="page = $event"></pagination-controls>
+</div>
