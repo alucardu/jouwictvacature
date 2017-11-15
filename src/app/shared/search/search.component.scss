@@ -36,3 +36,14 @@ button {
     outline: none;
   }
 }
+
+@media screen and (max-width: 680px) {
+  #searchContent {
+    margin-top: 0px;
+    float: none;    
+  }
+  input {
+    padding-left: 5%;
+    width: 95%;
+  }
+}

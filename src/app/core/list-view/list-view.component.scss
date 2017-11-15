@@ -97,3 +97,23 @@ $white: #FFFFFF;
         }
     }
 }
+
+@media screen and (max-width: 680px) {
+    #title{
+        height: 45px;
+        font-size: 2.5vw
+    }
+    .jobLogo {
+        width: 30%;
+    }
+    .jobTitle{
+        font-size: 14px;
+    }
+    .jobDetails{
+        padding: 0 1% 0 1%;
+        width: 20%;
+        button{
+            font-size: 10px;
+        }
+    }
+}
