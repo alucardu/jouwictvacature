@@ -1,9 +1,10 @@
 #headerContent {
     max-width: 1400px;
-    height: 100px;
+    height: 150px;
     margin: 0 auto;
 }
 
 #logo {
     margin-top: 50px;
+    display: inline-block;
 }
