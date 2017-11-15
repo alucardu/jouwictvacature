@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
+.pagination /deep/ .ngx-pagination {
+    display: flex;
+    justify-content: center;
+    background-color: #F9F9F9;
+    padding-top: 25px;
+    margin-left: -40px;
+}
+
+.pagination /deep/ .ngx-pagination .current {
+    border-radius: 3px;
+}
+
+.pagination /deep/ .ngx-pagination a:hover {
+    border-radius: 3px;
+}
+
+.pagination /deep/ .ngx-pagination li a {
+    color: #6E90A0;
+}
+
 #jobContent {
     font-family: 'PT Sans', sans-serif;    
     max-width: 1400px;
@@ -33,6 +53,10 @@
     border-bottom: 2px solid #E7EEEF;
     padding: 20px 0 20px 0;
     display: flex    
+}
+
+.listJob li:last-child{
+    border-bottom: none;
 }
 
 .jobContent {
